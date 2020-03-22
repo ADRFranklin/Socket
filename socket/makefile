@@ -3,7 +3,7 @@ GCC=gcc
 
 OUTFILE="../socket.so"
 
-COMPILE_FLAGS=-c -m32 -O3 -fPIC -w -DLINUX -Wall -I../SDK/amx/
+COMPILE_FLAGS=-c -m32 -fpermissive -O3 -fPIC -w -DLINUX -Wall -I../SDK/amx/
 
 all:
 	$(GCC) $(COMPILE_FLAGS) ../SDK/amx/*.c

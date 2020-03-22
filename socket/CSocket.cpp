@@ -351,7 +351,7 @@ int CSocket::ssl_create(int socketid, int method)
 #if (defined(WIN32) || defined(_WIN32) || defined(_WIN64))
 	const SSL_METHOD *ssl_method;
 #else
-	SSL_METHOD **ssl_method;
+	SSL_METHOD *ssl_method;
 #endif
 	ssl_method = ((method) ? SSLv23_server_method() : SSLv23_client_method());
 	m_pSocketInfo[socketid].ssl_context = SSL_CTX_new(ssl_method);

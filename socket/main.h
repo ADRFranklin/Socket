@@ -39,7 +39,6 @@
 #include "CSocket.h"
 #include "CNatives.h"
 
-
 #define VERSION "0.2b"
 #define INVALID_CLIENT_ID (-1)
 
